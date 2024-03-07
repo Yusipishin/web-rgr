@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Учёт проката аудио/видео дисков</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <main class="main">
+          <h1 class="main__title">Учёт проката видео/аудио дисков</h1>
+          <div class="main__wrapper">
+            <label class="main__label" for="">
+              Поиск по типу носителя
+              <input class="main__input" maxlength="10" type="text" name="" id="" />
+            </label>
+            <button class="main__btn-find main__btn">Найти</button>
+          </div>
+          <table class="main__table">
+            <thead>
+              <tr>
+                <th>ID заказа</th>
+                <th>Заказчик</th>
+                <th>Название</th>
+                <th>Тип носителя</th>
+                <th>Формат записи</th>
+                <th>Дата выдачи</th>
+                <th>Дата возврата</th>
+                <th>Кол-во дней</th>
+                <th>Тариф в сутки</th>
+                <th>Надбавка за задержку</th>
+                <th>Итого</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>242352</td>
+                <td>А.В. Юсипишин</td>
+                <td>Thriller</td>
+                <td>CD</td>
+                <td>CD-ROM</td>
+                <td>22.02.2024</td>
+                <td>29.02.2024</td>
+                <td>12</td>
+                <td>100</td>
+                <td>0</td>
+                <td>700</td>
+              </tr>
+              <tr>
+                <td>653262</td>
+                <td>В.А. Шурин</td>
+                <td>Abbey Road</td>
+                <td>Mini LP CD</td>
+                <td>CD-DA</td>
+                <td>09.01.2024</td>
+                <td>17.01.2024</td>
+                <td>5</td>
+                <td>200</td>
+                <td>900</td>
+                <td>1900</td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+          <button class="main__btn-add main__btn">Добавить заказ</button>
+          <button class="main__btn-rename main__btn">
+            Редактировать названия
+          </button>
+        </main>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

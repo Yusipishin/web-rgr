@@ -1,0 +1,41 @@
+{
+  "orders": [
+    {
+      "id": 242352,
+      "client": "А.В. Юсипишин",
+      "title": "Thriller",
+      "type": "CD",
+      "format": "CD-ROM",
+      "issued": "22.02.2024",
+      "returned": "29.02.2024",
+      "days": 12,
+      "rate": 100,
+      "allowance": 0,
+      "total": 700
+    },
+    {
+      "id": 653262,
+      "client": "В.А. Шурин",
+      "title": "Abbey Road",
+      "type": "Mini LP CD",
+      "format": "CD-DA",
+      "issued": "09.01.2024",
+      "returned": "17.01.2024",
+      "days": 5,
+      "rate": 200,
+      "allowance": 900,
+      "total": 1900
+    }
+  ],
+  "titles": [
+    "Sgt. Pepper’s Lonely Hearts Club Band",
+    "Abbey Road",
+    "The Dark Side of the Moon",
+    "Thriller",
+    "Nevermind",
+    "Rumours",
+    "Back in Black",
+    "Led Zeppelin IV",
+    "The Wall"
+  ]
+}
