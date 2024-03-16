@@ -93,3 +93,7 @@ tbody tr:nth-child(odd) {
 .main__btn-add {
   margin-right: 33px;
 }
+
+.main__ic {
+  cursor: pointer;
+}

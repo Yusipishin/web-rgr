@@ -12,15 +12,21 @@
       <div class="container">
         <main class="main">
           <h1 class="main__title">Учёт проката видео/аудио дисков</h1>
-          <div class="main__wrapper">
-            <label class="main__label" for="">
-              Поиск по типу носителя
-              <input class="main__input" maxlength="10" type="text" name="" id="" />
-            </label>
-            <button class="main__btn-find main__btn">Найти</button>
-          </div>
-          <table class="main__table">
-            <thead>
+          <section class="main">
+            <div class="main__wrapper">
+              <label class="main__label">
+                Поиск по типу носителя
+                <input
+                    class="main__input"
+                    maxlength="10"
+                    type="text"
+                    name="media-type"
+                />
+              </label>
+              <button class="main__btn-find main__btn">Найти</button>
+            </div>
+            <table class="main__table">
+              <thead>
               <tr>
                 <th>ID заказа</th>
                 <th>Заказчик</th>
@@ -34,41 +40,23 @@
                 <th>Надбавка за задержку</th>
                 <th>Итого</th>
               </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>242352</td>
-                <td>А.В. Юсипишин</td>
-                <td>Thriller</td>
-                <td>CD</td>
-                <td>CD-ROM</td>
-                <td>22.02.2024</td>
-                <td>29.02.2024</td>
-                <td>12</td>
-                <td>100</td>
-                <td>0</td>
-                <td>700</td>
-              </tr>
-              <tr>
-                <td>653262</td>
-                <td>В.А. Шурин</td>
-                <td>Abbey Road</td>
-                <td>Mini LP CD</td>
-                <td>CD-DA</td>
-                <td>09.01.2024</td>
-                <td>17.01.2024</td>
-                <td>5</td>
-                <td>200</td>
-                <td>900</td>
-                <td>1900</td>
-              </tr>
-              <tr>
-            </tbody>
-          </table>
-          <button class="main__btn-add main__btn">Добавить заказ</button>
-          <button class="main__btn-rename main__btn">
-            Редактировать названия
-          </button>
+              </thead>
+              <tbody class="main__table-body"></tbody>
+            </table>
+            <button class="main__btn-add main__btn">Добавить заказ</button>
+            <button class="main__btn-rename main__btn">
+              Редактировать названия
+            </button>
+          </section>
+          <section class="add">
+
+          </section>
+          <section class="edit-item">
+
+          </section>
+          <section class="edit-names">
+
+          </section>
         </main>
       </div>
     </div>
