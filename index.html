@@ -1,65 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="main.css"/>
     <title>Учёт проката аудио/видео дисков</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
         <main class="main">
-          <h1 class="main__title">Учёт проката видео/аудио дисков</h1>
-          <section class="main">
-            <div class="main__wrapper">
-              <label class="main__label">
-                Поиск по типу носителя
-                <input
-                    class="main__input"
-                    maxlength="10"
-                    type="text"
-                    name="media-type"
-                />
-              </label>
-              <button class="main__btn-find main__btn">Найти</button>
-            </div>
-            <table class="main__table">
-              <thead>
-              <tr>
-                <th>ID заказа</th>
-                <th>Заказчик</th>
-                <th>Название</th>
-                <th>Тип носителя</th>
-                <th>Формат записи</th>
-                <th>Дата выдачи</th>
-                <th>Дата возврата</th>
-                <th>Кол-во дней</th>
-                <th>Тариф в сутки</th>
-                <th>Надбавка за задержку</th>
-                <th>Итого</th>
-              </tr>
-              </thead>
-              <tbody class="main__table-body"></tbody>
-            </table>
-            <button class="main__btn-add main__btn">Добавить заказ</button>
-            <button class="main__btn-rename main__btn">
-              Редактировать названия
-            </button>
-          </section>
-          <section class="add">
+            <h1 class="main__title">Учёт проката видео/аудио дисков</h1>
+            <section class="main">
+                <div class="main__wrapper">
+                    <label class="main__label">
+                        Поиск по типу носителя
+                        <input
+                            class="main__input"
+                            maxlength="10"
+                            type="text"
+                            name="media-type"
+                        />
+                    </label>
+                    <button class="main__btn-find main__btn">Найти</button>
+                </div>
+                <table class="main__table">
+                    <thead>
+                    <tr>
+                        <th>ID заказа</th>
+                        <th>Заказчик</th>
+                        <th>Название</th>
+                        <th>Тип носителя</th>
+                        <th>Формат записи</th>
+                        <th>Дата выдачи</th>
+                        <th>Дата возврата</th>
+                        <th>Кол-во дней</th>
+                        <th>Тариф в сутки</th>
+                        <th>Надбавка за задержку</th>
+                        <th>Итого</th>
+                    </tr>
+                    </thead>
+                    <tbody class="main__table-body"></tbody>
+                </table>
+                <button class="main__btn-add main__btn">Добавить заказ</button>
+                <button class="main__btn-rename main__btn">
+                    Редактировать названия
+                </button>
+            </section>
+            <section class="add wrapper">
+                <h2 class="add__title secondary-title">Введите данные заказа</h2>
+                <form class="add__form">
+                    <div class="add__form-inner">
+                        <span>Заказчик</span>
+                        <input name="client" type="text" placeholder="Введите ФИО...">
+                        <span>Название</span>
+                        <select class="add__form-titles" name="title">
+                            <option value="">-- Выберите название --</option>
+                        </select>
+                        <span>Тип носителя</span>
+                        <select name="type">
+                            <option value="">-- Выберите тип носителя --</option>
+                            <option value="Тип 1">CD</option>
+                            <option value="Тип 2">Mini LP CD</option>
+                            <option value="Тип 3">CD-RW</option>
+                            <option value="Тип 4">DVD</option>
+                        </select>
+                        <span>Формат записи</span>
+                        <select name="format">
+                            <option value="">-- Выберите формат записи --</option>
+                            <option value="Формат 1">CD-ROM</option>
+                            <option value="Формат 2">CD-DA</option>
+                            <option value="Формат 3">DVD-Audio</option>
+                            <option value="Формат 4">SACD</option>
+                            <option value="Формат 4">Blu-ray Disc</option>
+                            <option value="Формат 4">CD Extra</option>
+                        </select>
+                        <span>Дата выдачи</span>
+                        <input name="issued" type="date">
+                        <span>Кол-во дней</span>
+                        <input name="days" type="number" min="0" placeholder="Введите количество дней...">
+                        <span>Тариф в сутки</span>
+                        <input name="rate" type="number" placeholder="Введите тариф в сутки...">
+                    </div>
+                    <div>
+                        <button type="submit" class="main__btn">Добавить</button>
+                        <button class="btn-cancel">Отмена</button>
+                    </div>
+                </form>
+            </section>
+            <section class="edit-item">
 
-          </section>
-          <section class="edit-item">
+            </section>
+            <section class="edit-names">
 
-          </section>
-          <section class="edit-names">
-
-          </section>
+            </section>
         </main>
-      </div>
     </div>
-    <script src="main.js"></script>
-  </body>
+</div>
+<script src="js/index.js"></script>
+<script src="js/buildTable.js"></script>
+<script src="js/buildTitles.js"></script>
+<script src="js/filterTable.js"></script>
+<script src="js/request.js"></script>
+</body>
 </html>
