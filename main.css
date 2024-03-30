@@ -32,6 +32,10 @@ body {
   display: flex;
 }
 
+.none {
+  display: none;
+}
+
 .btn-cancel {
   color: #f00;
   position: relative;
