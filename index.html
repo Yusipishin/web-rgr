@@ -8,106 +8,153 @@
     <title>Учёт проката аудио/видео дисков</title>
 </head>
 <body>
-<div class="wrapper">
-    <div class="container">
-        <main class="main">
-            <section class="main-section">
-                <h1 class="main__title">Учёт проката видео/аудио дисков</h1>
-                <div class="main__wrapper">
-                    <label class="main__label">
-                        Поиск по типу носителя
-                        <input
-                            class="main__input"
-                            maxlength="10"
-                            type="text"
-                            name="media-type"
-                        />
-                    </label>
-                    <button class="main__btn-find main__btn">Найти</button>
-                </div>
-                <table class="main__table">
-                    <thead>
-                    <tr>
-                        <th>ID заказа</th>
-                        <th>Заказчик</th>
-                        <th>Название</th>
-                        <th>Тип носителя</th>
-                        <th>Формат записи</th>
-                        <th>Дата выдачи</th>
-                        <th>Дата возврата</th>
-                        <th>Кол-во дней</th>
-                        <th>Тариф в сутки</th>
-                        <th>Надбавка за задержку</th>
-                        <th>Итого</th>
-                    </tr>
-                    </thead>
-                    <tbody class="main__table-body"></tbody>
-                </table>
-                <button class="main__btn-add main__btn">Добавить заказ</button>
-                <button class="main__btn-rename main__btn">
-                    Редактировать названия
-                </button>
-            </section>
-            <section class="add-section none">
-                <div class="add wrapper">
-                    <h2 class="add__title secondary-title">Введите данные заказа</h2>
-                    <form class="add__form">
-                        <div class="add__form-inner">
-                            <span>Заказчик</span>
-                            <input class="order-client" name="client" type="text" placeholder="Введите ФИО...">
-                            <span>Название</span>
-                            <select class="order-title add__form-titles" name="title">
-                                <option value="">-- Выберите название --</option>
-                            </select>
-                            <span>Тип носителя</span>
-                            <select class="order-type" name="type">
-                                <option value="">-- Выберите тип носителя --</option>
-                                <option value="CD">CD</option>
-                                <option value="Mini LP CD">Mini LP CD</option>
-                                <option value="CD-RW">CD-RW</option>
-                                <option value="DVD">DVD</option>
-                            </select>
-                            <span>Формат записи</span>
-                            <select class="order-format" name="format">
-                                <option value="">-- Выберите формат записи --</option>
-                                <option value="CD-ROM">CD-ROM</option>
-                                <option value="CD-DA">CD-DA</option>
-                                <option value="DVD-Audio">DVD-Audio</option>
-                                <option value="SACD">SACD</option>
-                                <option value="Blu-ray Disc">Blu-ray Disc</option>
-                                <option value="CD Extra">CD Extra</option>
-                            </select>
-                            <span>Дата выдачи</span>
-                            <input class="order-issued" name="issued" type="date">
-                            <span>Кол-во дней</span>
-                            <input class="order-days" name="days" type="number" min="0" max="60"
-                                   placeholder="Введите количество дней...">
-                            <span>Тариф в сутки</span>
-                            <input class="order-rate" name="rate" type="number" min="0"
-                                   placeholder="Введите тариф в сутки...">
-                        </div>
-                        <div>
-                            <button type="submit" class="main__btn order-post-btn">Добавить</button>
-                            <button class="btn-cancel">Отмена</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section class="edit-item none">
+    <div class="wrapper">
+        <div class="container">
+            <main class="main">
+                <section class="main-section">
+                    <h1 class="main__title">Учёт проката видео/аудио дисков</h1>
+                    <div class="main__wrapper">
+                        <label class="main__label">
+                            Поиск по типу носителя
+                            <input
+                                class="main__input"
+                                maxlength="10"
+                                type="text"
+                                name="media-type"
+                            />
+                        </label>
+                        <button class="main__btn-find main__btn">Найти</button>
+                    </div>
+                    <table class="main__table">
+                        <thead>
+                        <tr>
+                            <th>ID заказа</th>
+                            <th>Заказчик</th>
+                            <th>Название</th>
+                            <th>Тип носителя</th>
+                            <th>Формат записи</th>
+                            <th>Дата выдачи</th>
+                            <th>Дата возврата</th>
+                            <th>Кол-во дней</th>
+                            <th>Тариф в сутки</th>
+                            <th>Надбавка за задержку</th>
+                            <th>Итого</th>
+                        </tr>
+                        </thead>
+                        <tbody class="main__table-body"></tbody>
+                    </table>
+                    <button class="main__btn-add main__btn">Добавить заказ</button>
+                    <button class="main__btn-rename main__btn">
+                        Редактировать названия
+                    </button>
+                </section>
+                <section class="add-section none">
+                    <div class="add wrapper">
+                        <h2 class="add__title secondary-title">Введите данные заказа</h2>
+                        <form class="add__form">
+                            <div class="add__form-inner">
+                                <span>Заказчик</span>
+                                <input class="order-client" name="client" type="text" placeholder="Введите ФИО...">
+                                <span>Название</span>
+                                <select class="order-title add__form-titles" name="title">
+                                    <option value="">-- Выберите название --</option>
+                                </select>
+                                <span>Тип носителя</span>
+                                <select class="order-type" name="type">
+                                    <option value="">-- Выберите тип носителя --</option>
+                                    <option value="CD">CD</option>
+                                    <option value="Mini LP CD">Mini LP CD</option>
+                                    <option value="CD-RW">CD-RW</option>
+                                    <option value="DVD">DVD</option>
+                                </select>
+                                <span>Формат записи</span>
+                                <select class="order-format" name="format">
+                                    <option value="">-- Выберите формат записи --</option>
+                                    <option value="CD-ROM">CD-ROM</option>
+                                    <option value="CD-DA">CD-DA</option>
+                                    <option value="DVD-Audio">DVD-Audio</option>
+                                    <option value="SACD">SACD</option>
+                                    <option value="Blu-ray Disc">Blu-ray Disc</option>
+                                    <option value="CD Extra">CD Extra</option>
+                                </select>
+                                <span>Дата выдачи</span>
+                                <input class="order-issued" name="issued" type="date">
+                                <span>Кол-во дней</span>
+                                <input class="order-days" name="days" type="number" min="0" max="60"
+                                       placeholder="Введите количество дней...">
+                                <span>Тариф в сутки</span>
+                                <input class="order-rate" name="rate" type="number" min="0"
+                                       placeholder="Введите тариф в сутки...">
+                            </div>
+                            <div>
+                                <button type="submit" class="main__btn order-post-btn">Добавить</button>
+                                <button type="button" class="btn-cancel">Отмена</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="edit-section none">
+                    <div class="add wrapper">
+                        <h2 class="add__title secondary-title">Измените данные заказа</h2>
+                        <form class="edit__form">
+                            <div class="add__form-inner">
+                                <span>Заказчик</span>
+                                <input class="order-client" name="client" type="text" placeholder="Введите ФИО...">
+                                <span>Название</span>
+                                <select class="order-title add__form-titles" name="title">
+                                    <option value="">-- Выберите название --</option>
+                                </select>
+                                <span>Тип носителя</span>
+                                <select class="order-type" name="type">
+                                    <option value="">-- Выберите тип носителя --</option>
+                                    <option value="CD">CD</option>
+                                    <option value="Mini LP CD">Mini LP CD</option>
+                                    <option value="CD-RW">CD-RW</option>
+                                    <option value="DVD">DVD</option>
+                                </select>
+                                <span>Формат записи</span>
+                                <select class="order-format" name="format">
+                                    <option value="">-- Выберите формат записи --</option>
+                                    <option value="CD-ROM">CD-ROM</option>
+                                    <option value="CD-DA">CD-DA</option>
+                                    <option value="DVD-Audio">DVD-Audio</option>
+                                    <option value="SACD">SACD</option>
+                                    <option value="Blu-ray Disc">Blu-ray Disc</option>
+                                    <option value="CD Extra">CD Extra</option>
+                                </select>
+                                <span>Дата выдачи</span>
+                                <input class="order-issued" name="issued" type="date">
+                                <span>Дата возврата</span>
+                                <input class="order-returned" name="returned" type="date">
+                                <span>Кол-во дней</span>
+                                <input class="order-days" name="days" type="number" min="0" max="60"
+                                       placeholder="Введите количество дней...">
+                                <span>Тариф в сутки</span>
+                                <input class="order-rate" name="rate" type="number" min="0"
+                                       placeholder="Введите тариф в сутки...">
+                            </div>
+                            <div>
+                                <button type="submit" class="main__btn order-update-btn">Изменить</button>
+                                <button type="button" class="btn-cancel">Отмена</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="edit-names none">
 
-            </section>
-            <section class="edit-names none">
-
-            </section>
-        </main>
+                </section>
+            </main>
+        </div>
     </div>
-</div>
-<script src="js/index.js"></script>
-<script src="js/postData.js"></script>
-<script src="js/buildTable.js"></script>
-<script src="js/buildTitles.js"></script>
-<script src="js/filterTable.js"></script>
-<script src="js/postOrder.js"></script>
-<script src="js/request.js"></script>
+    <script defer src="js/buildTable.js"></script>
+    <script defer src="js/buildTitles.js"></script>
+    <script defer src="js/updateData.js"></script>
+    <script defer src="js/getOrders.js"></script>
+    <script defer src="js/postData.js"></script>
+    <script defer src="js/deleteData.js"></script>
+    <script defer src="js/filterTable.js"></script>
+    <script defer src="js/postOrder.js"></script>
+    <script defer src="js/updateOrder.js"></script>
+    <script defer src="js/index.js"></script>
 </body>
 </html>

@@ -1,19 +1,21 @@
 "use strict"
 
-let dataTable,
-    dataTitles,
-    filterDataTable,
-    addForm = false;
+//         Работа с сервером:
+// npm i -g json-server -- установка
+// json-server -w data.json -- запуск
 
-const sections = document.querySelectorAll('section')
+let dataTable, dataTitles, filterDataTable,
+    sections, forms, deleteId, updateId;
 
-const main = document.querySelector('main')
-const mainSection = document.querySelector('.main-section')
-const addSection = document.querySelector('.add-section')
+const tableBody = document.querySelector('.main__table-body');
+const mainInput = document.querySelector('.main__input')
+const selectTitles = document.querySelectorAll('.add__form-titles')
+const cancelBtns = document.querySelectorAll('.btn-cancel')
+const addForm = document.querySelector('.add__form');
+const editForm = document.querySelector('.edit__form');
+const findBtn = document.querySelector('.main__btn-find')
 const addBtn = document.querySelector('.main__btn-add');
 const editBtn = document.querySelector('.main__btn-rename');
-const editIc = document.querySelector('.main__ic-edit')
-const deleteIc = document.querySelector('.main__ic-delete')
 
 const setVisible = (cls) => {
     sections.forEach(section => {
@@ -23,14 +25,59 @@ const setVisible = (cls) => {
     })
 }
 
-document.querySelector('.btn-cancel')
-    .addEventListener('click', setVisible('main-section'))
+const resetForms = () => {
+    forms.forEach(form => form.reset())
+}
 
-addBtn.addEventListener('click', () => {
-    addForm = !addForm;
-    setVisible('add-section')
+cancelBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        resetForms()
+        setVisible('main-section')
+    })
 })
 
-editBtn.addEventListener('click', () => {
+addBtn.addEventListener('click', () => setVisible('add-section'))
 
-})
+getOrders().then(() => afterCode())
+
+const afterCode = async () => {
+
+    await fetch("http://localhost:3000/titles")
+        .then((data) => data.json())
+        .then((data) => {
+            dataTitles = data
+            buildTitles(data)
+    })
+
+    sections = document.querySelectorAll('section')
+    forms = document.querySelectorAll('form')
+
+    addForm.addEventListener('submit', postOrder)
+    editForm.addEventListener('submit', updateOrder)
+    findBtn.addEventListener('click', filterTable)
+
+    tableBody.addEventListener('click', async (event) => {
+        const elem = event.target
+        if (elem.classList.contains('main__ic-delete')) {
+            deleteId = elem.getAttribute('data-id')
+            deleteData('http://localhost:3000/orders', deleteId)
+                .then(() => getOrders())
+        } else if (elem.classList.contains('main__ic-edit')) {
+            setVisible('edit-section')
+            updateId = event.target.getAttribute('data-id')
+            await fetch(`http://localhost:3000/orders/${updateId}`)
+                .then((data) => data.json())
+                .then((data) => {
+                    const orderInputs = editForm.querySelectorAll('input');
+                    const orderSelects = editForm.querySelectorAll('select');
+
+                    orderInputs.forEach(input => {
+                        input.value = data[input.getAttribute('name')]
+                    });
+                    orderSelects.forEach(select => {
+                        select.value = data[select.getAttribute('name')]
+                    });
+                })
+        }
+    })
+}

@@ -136,11 +136,15 @@ tbody tr:nth-child(odd) {
   cursor: pointer;
 }
 
+.wrap-ics {
+  gap: 15px
+}
+
 .add {
   margin: 40px 0;
 }
 
-.add__form {
+.add__form, .edit__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,11 +159,7 @@ tbody tr:nth-child(odd) {
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
-.add__form input {
+.add__form input, .edit__form input {
   padding: 8px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-}
-
-.add__form-titles {
-
 }

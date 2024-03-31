@@ -1,10 +1,9 @@
-const form = document.querySelector('.add__form');
 
 const postOrder = (event) => {
     event.preventDefault()
     const orderData = {};
-    const orderInputs = form.querySelectorAll('input');
-    const orderSelects = form.querySelectorAll('select');
+    const orderInputs = addForm.querySelectorAll('input');
+    const orderSelects = addForm.querySelectorAll('select');
 
     orderInputs.forEach(input => {
         orderData[input.name] = input.value;
@@ -18,10 +17,8 @@ const postOrder = (event) => {
     orderData.total = "---"
 
     postData('http://localhost:3000/orders', orderData)
-        .then(data => console.log(data))
-
-    request()
-    setVisible('main-section')
+        .then(() => getOrders())
+        .then(() => setVisible('main-section'))
+        .then(() => resetForms())
 }
 
-form.addEventListener('submit', postOrder)

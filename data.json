@@ -1,59 +1,34 @@
 {
   "orders": [
     {
-      "id": 242352,
       "client": "А.В. Юсипишин",
-      "title": "Thriller",
-      "type": "CD",
-      "format": "CD-ROM",
-      "issued": "2024-03-15",
-      "returned": "2024-03-15",
-      "days": 12,
-      "rate": 100,
-      "allowance": 0,
-      "total": 700
-    },
-    {
-      "id": 653262,
-      "client": "В.А. Шурин",
-      "title": "Abbey Road",
+      "issued": "2024-03-31",
+      "returned": "2024-04-06",
+      "days": "5",
+      "rate": "425",
+      "title": "Sgt.",
       "type": "Mini LP CD",
-      "format": "CD-DA",
-      "issued": "2024-03-15",
-      "returned": "2024-03-15",
-      "days": 5,
-      "rate": 200,
-      "allowance": 900,
-      "total": 1900
-    },
-    {
-      "id": 745236,
-      "client": "С.М. Пушин",
-      "title": "The Dark Side of the Moon",
-      "type": "Mini LP CD",
-      "format": "CD-DA",
-      "issued": "2024-03-15",
-      "returned": "2024-03-15",
-      "days": 5,
-      "rate": 200,
-      "allowance": 900,
-      "total": 1900
-    },
-    {
-      "client": "ЮС АКУП КПУК",
-      "issued": "2024-03-15",
-      "days": "35",
-      "rate": "788",
-      "title": "Thriller",
-      "type": "CD-RW",
       "format": "DVD-Audio",
+      "allowance": 637,
+      "total": 2762,
+      "id": 1
+    },
+    {
+      "client": "",
+      "issued": "",
+      "days": "",
+      "rate": "",
+      "title": "The",
+      "type": "",
+      "format": "",
       "returned": "---",
       "allowance": "---",
       "total": "---",
-      "id": 745237
+      "id": 2
     }
   ],
   "titles": [
+    "FFFF FFFFFFFFF",
     "Sgt. Pepper’s Lonely Hearts Club Band",
     "Abbey Road",
     "The Dark Side of the Moon",
