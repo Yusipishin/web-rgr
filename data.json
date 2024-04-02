@@ -14,17 +14,82 @@
       "id": 1
     },
     {
+      "client": "fergherhg",
+      "issued": "",
+      "returned": "",
+      "days": "3",
+      "rate": "234",
+      "title": "The",
+      "type": "DVD",
+      "format": "DVD-Audio",
+      "allowance": 0,
+      "total": 702,
+      "id": 3
+    },
+    {
       "client": "",
       "issued": "",
       "days": "",
       "rate": "",
-      "title": "The",
+      "title": "",
       "type": "",
       "format": "",
       "returned": "---",
       "allowance": "---",
       "total": "---",
-      "id": 2
+      "id": 4
+    },
+    {
+      "client": "",
+      "issued": "",
+      "days": "",
+      "rate": "",
+      "title": "",
+      "type": "",
+      "format": "",
+      "returned": "---",
+      "allowance": "---",
+      "total": "---",
+      "id": 5
+    },
+    {
+      "client": "",
+      "issued": "",
+      "days": "",
+      "rate": "",
+      "title": "",
+      "type": "",
+      "format": "",
+      "returned": "---",
+      "allowance": "---",
+      "total": "---",
+      "id": 6
+    },
+    {
+      "client": "",
+      "issued": "",
+      "days": "",
+      "rate": "",
+      "title": "Sgt.",
+      "type": "Mini LP CD",
+      "format": "DVD-Audio",
+      "returned": "---",
+      "allowance": "---",
+      "total": "---",
+      "id": 7
+    },
+    {
+      "client": "",
+      "issued": "",
+      "days": "",
+      "rate": "",
+      "title": "The Dark Side of the Moon",
+      "type": "",
+      "format": "",
+      "returned": "---",
+      "allowance": "---",
+      "total": "---",
+      "id": 8
     }
   ],
   "titles": [
