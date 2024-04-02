@@ -4,7 +4,7 @@
 // npm i -g json-server -- установка
 // json-server -w data.json -- запуск
 
-let dataTable, dataTitles, filterDataTable,
+let dataTable, filterDataTable, titles,
     sections, forms, deleteId, updateId;
 
 const tableBody = document.querySelector('.main__table-body');
@@ -13,6 +13,7 @@ const selectTitles = document.querySelectorAll('.add__form-titles')
 const cancelBtns = document.querySelectorAll('.btn-cancel')
 const addForm = document.querySelector('.add__form');
 const editForm = document.querySelector('.edit__form');
+const renameBody = document.querySelector('.rename__table-body');
 const findBtn = document.querySelector('.main__btn-find')
 const addBtn = document.querySelector('.main__btn-add');
 const editBtn = document.querySelector('.main__btn-rename');
@@ -37,16 +38,25 @@ cancelBtns.forEach(btn => {
 })
 
 addBtn.addEventListener('click', () => setVisible('add-section'))
+editBtn.addEventListener('click', () => setVisible('auth-section'))
 
 getOrders().then(() => afterCode())
 
 const afterCode = async () => {
-
     await fetch("http://localhost:3000/titles")
         .then((data) => data.json())
         .then((data) => {
-            dataTitles = data
+            titles = data
             buildTitles(data)
+            buildList(data)
+    })
+
+    renameBody.addEventListener('click', (e) => {
+        const el = e.target
+        if (el.classList.contains('rename__ic-delete')) {
+            const titleDel = el.getAttribute('data-title')
+            updateList(titleDel)
+        }
     })
 
     sections = document.querySelectorAll('section')

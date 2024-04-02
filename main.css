@@ -101,7 +101,7 @@ body {
   border: 1px solid #888888;
 }
 
-.main__table {
+.main__table, .rename__table {
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -110,18 +110,18 @@ tbody tr:nth-child(odd) {
   background-color: #f1f1f144;
 }
 
-.main__table {
+.main__table, .rename__table {
 	border: 1px solid #dddddd;
 	border-collapse: collapse; 
 }
 
-.main__table th {
+.main__table th, .rename__table th {
 	padding: 5px;
 	background: #efefef;
 	border: 1px solid #dddddd;
 }
 
-.main__table td {
+.main__table td, .rename__table td {
 	padding: 5px;
   max-width: 200px;
   text-align: center;
@@ -162,4 +162,8 @@ tbody tr:nth-child(odd) {
 .add__form input, .edit__form input {
   padding: 8px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.input-title {
+  margin: 0 0 15px 30px;
 }

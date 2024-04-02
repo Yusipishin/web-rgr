@@ -140,8 +140,46 @@
                         </form>
                     </div>
                 </section>
-                <section class="edit-names none">
-
+                <section class="auth-section">
+                    <div class="add wrapper">
+                        <h2 class="add__title secondary-title">Необходима авторизация</h2>
+                        <form class="edit__form">
+                            <div class="add__form-inner">
+                                <span>Логин</span>
+                                <input class="login" name="login" type="text" placeholder="Введите логин...">
+                                <span>Пароль</span>
+                                <input class="password" name="password" type="password" placeholder="Введите пароль...">
+                            </div>
+                            <div>
+                                <button type="submit" class="main__btn order-update-btn">Вход</button>
+                                <button type="button" class="btn-cancel">Отмена</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="rename-section">
+                    <div class="add wrapper">
+                        <h2 class="add__title secondary-title">Редактирование названий</h2>
+                        <form class="rename__form">
+                            <div>
+                                <p>Добро пожаловать, admin!</p>
+                                <table class="rename__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Название</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="rename__table-body"></tbody>
+                                </table>
+                                <span>Добавление названия</span>
+                                <input class="input-title" name="title" type="text" placeholder="Введите название...">
+                            </div>
+                            <div>
+                                <button type="submit" class="main__btn order-update-btn">Добавить</button>
+                                <button type="button" class="btn-cancel">Отмена</button>
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </main>
         </div>
@@ -150,11 +188,13 @@
     <script defer src="js/buildTitles.js"></script>
     <script defer src="js/updateData.js"></script>
     <script defer src="js/getOrders.js"></script>
+    <script defer src="js/updateList.js"></script>
     <script defer src="js/postData.js"></script>
     <script defer src="js/deleteData.js"></script>
     <script defer src="js/filterTable.js"></script>
     <script defer src="js/postOrder.js"></script>
     <script defer src="js/updateOrder.js"></script>
+    <script defer src="js/buildList.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 </html>

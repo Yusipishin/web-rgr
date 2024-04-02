@@ -25,71 +25,6 @@
       "allowance": 0,
       "total": 702,
       "id": 3
-    },
-    {
-      "client": "",
-      "issued": "",
-      "days": "",
-      "rate": "",
-      "title": "",
-      "type": "",
-      "format": "",
-      "returned": "---",
-      "allowance": "---",
-      "total": "---",
-      "id": 4
-    },
-    {
-      "client": "",
-      "issued": "",
-      "days": "",
-      "rate": "",
-      "title": "",
-      "type": "",
-      "format": "",
-      "returned": "---",
-      "allowance": "---",
-      "total": "---",
-      "id": 5
-    },
-    {
-      "client": "",
-      "issued": "",
-      "days": "",
-      "rate": "",
-      "title": "",
-      "type": "",
-      "format": "",
-      "returned": "---",
-      "allowance": "---",
-      "total": "---",
-      "id": 6
-    },
-    {
-      "client": "",
-      "issued": "",
-      "days": "",
-      "rate": "",
-      "title": "Sgt.",
-      "type": "Mini LP CD",
-      "format": "DVD-Audio",
-      "returned": "---",
-      "allowance": "---",
-      "total": "---",
-      "id": 7
-    },
-    {
-      "client": "",
-      "issued": "",
-      "days": "",
-      "rate": "",
-      "title": "The Dark Side of the Moon",
-      "type": "",
-      "format": "",
-      "returned": "---",
-      "allowance": "---",
-      "total": "---",
-      "id": 8
     }
   ],
   "titles": [
@@ -103,5 +38,15 @@
     "Back in Black",
     "Led Zeppelin IV",
     "The Wall"
+  ],
+  "admins": [
+    {
+      "login": "admin",
+      "password": 123
+    },
+    {
+      "login": "admin2",
+      "password": 12345
+    }
   ]
 }
