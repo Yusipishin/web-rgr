@@ -4,13 +4,13 @@
       "client": "А.В. Юсипишин",
       "issued": "2024-03-31",
       "returned": "2024-04-06",
-      "days": "5",
+      "days": "6",
       "rate": "425",
-      "title": "Sgt.",
+      "title": "Sgt. Pepper’s Lonely Hearts Club Band",
       "type": "Mini LP CD",
       "format": "DVD-Audio",
-      "allowance": 637,
-      "total": 2762,
+      "allowance": 0,
+      "total": 2550,
       "id": 1
     },
     {
@@ -25,28 +25,85 @@
       "allowance": 0,
       "total": 702,
       "id": 3
+    },
+    {
+      "client": "regerg",
+      "issued": "2024-04-09",
+      "returned": "2024-04-19",
+      "days": "23",
+      "rate": "666",
+      "title": "Sgt. Pepper’s Lonely Hearts Club Band",
+      "type": "Mini LP CD",
+      "format": "CD-DA",
+      "allowance": 0,
+      "total": 15318,
+      "id": 4
+    },
+    {
+      "client": "aLEXEY",
+      "issued": "2024-04-11",
+      "returned": "2024-04-06",
+      "days": "5",
+      "rate": "124",
+      "title": "NEW TITLE",
+      "type": "CD",
+      "format": "DVD-Audio",
+      "allowance": 0,
+      "total": 620,
+      "id": 5
+    },
+    {
+      "client": "Vladimir",
+      "issued": "2024-04-11",
+      "returned": "2024-04-12",
+      "days": "5",
+      "rate": "100",
+      "title": "Sgt. Pepper’s Lonely Hearts Club Band",
+      "type": "Mini LP CD",
+      "format": "SACD",
+      "allowance": 0,
+      "total": 500,
+      "id": 6
     }
   ],
   "titles": [
-    "FFFF FFFFFFFFF",
-    "Sgt. Pepper’s Lonely Hearts Club Band",
-    "Abbey Road",
-    "The Dark Side of the Moon",
-    "Thriller",
-    "Nevermind",
-    "Rumours",
-    "Back in Black",
-    "Led Zeppelin IV",
-    "The Wall"
+    {
+      "id": 2,
+      "title": "Sgt. Pepper’s Lonely Hearts Club Band"
+    },
+    {
+      "id": 664,
+      "title": "The Dark Side of the Moon"
+    },
+    {
+      "title": "NEW TITLE",
+      "id": 667
+    },
+    {
+      "title": "FINISH TITLE",
+      "id": 669
+    },
+    {
+      "title": "YOOO",
+      "id": 670
+    },
+    {
+      "title": "NEW",
+      "id": 671
+    },
+    {
+      "title": "ALSO",
+      "id": 672
+    }
   ],
   "admins": [
     {
       "login": "admin",
-      "password": 123
+      "password": "123"
     },
     {
-      "login": "admin2",
-      "password": 12345
+      "login": "admin24",
+      "password": "12345"
     }
   ]
 }

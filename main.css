@@ -144,7 +144,7 @@ tbody tr:nth-child(odd) {
   margin: 40px 0;
 }
 
-.add__form, .edit__form {
+.add__form, .edit__form, .auth__form, .rename__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,11 +159,32 @@ tbody tr:nth-child(odd) {
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
-.add__form input, .edit__form input {
+.add__form input, .edit__form input, .auth__form input, .rename__form input {
   padding: 8px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 .input-title {
   margin: 0 0 15px 30px;
+}
+
+.danger-txt {
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+.all-orders {
+  cursor: pointer;
+  color: chartreuse;
+}
+
+.add__descr {
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.notify {
+  text-align: center;
+  margin-top: 50px;
 }
