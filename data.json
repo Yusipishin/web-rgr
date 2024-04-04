@@ -2,68 +2,55 @@
   "orders": [
     {
       "client": "А.В. Юсипишин",
-      "issued": "2024-03-31",
-      "returned": "2024-04-06",
-      "days": "6",
-      "rate": "425",
+      "issued": "2024-04-04",
+      "returned": "2024-04-08",
+      "days": "5",
+      "rate": "80",
       "title": "Sgt. Pepper’s Lonely Hearts Club Band",
-      "type": "Mini LP CD",
-      "format": "DVD-Audio",
+      "type": "CD",
+      "format": "CD-ROM",
       "allowance": 0,
-      "total": 2550,
+      "total": 320,
       "id": 1
     },
     {
-      "client": "fergherhg",
-      "issued": "",
-      "returned": "",
+      "client": "С.К. Бумагин",
+      "issued": "2024-04-02",
+      "returned": "2024-04-06",
       "days": "3",
-      "rate": "234",
-      "title": "The",
-      "type": "DVD",
-      "format": "DVD-Audio",
-      "allowance": 0,
-      "total": 702,
+      "rate": "78",
+      "title": "The Dark Side of the Moon",
+      "type": "Mini LP CD",
+      "format": "CD-DA",
+      "allowance": 117,
+      "total": 351,
+      "id": 2
+    },
+    {
+      "client": "А.Р. Иванов",
+      "issued": "2024-04-01",
+      "returned": "2024-04-16",
+      "days": "2",
+      "rate": "50",
+      "title": "NEW TITLE",
+      "type": "CD-RW",
+      "format": "Blu-ray Disc",
+      "allowance": 975,
+      "total": 1075,
       "id": 3
     },
     {
-      "client": "regerg",
-      "issued": "2024-04-09",
-      "returned": "2024-04-19",
-      "days": "23",
-      "rate": "666",
-      "title": "Sgt. Pepper’s Lonely Hearts Club Band",
-      "type": "Mini LP CD",
-      "format": "CD-DA",
-      "allowance": 0,
-      "total": 15318,
-      "id": 4
-    },
-    {
-      "client": "aLEXEY",
-      "issued": "2024-04-11",
-      "returned": "2024-04-06",
+      "client": "С.В. Смирнов",
+      "issued": "2024-04-03",
       "days": "5",
-      "rate": "124",
-      "title": "NEW TITLE",
-      "type": "CD",
-      "format": "DVD-Audio",
-      "allowance": 0,
-      "total": 620,
-      "id": 5
-    },
-    {
-      "client": "Vladimir",
-      "issued": "2024-04-11",
-      "returned": "2024-04-12",
-      "days": "5",
-      "rate": "100",
-      "title": "Sgt. Pepper’s Lonely Hearts Club Band",
+      "rate": "90",
+      "title": "The Dark Side of the Moon",
       "type": "Mini LP CD",
       "format": "SACD",
-      "allowance": 0,
-      "total": 500,
-      "id": 6
+      "returned": "---",
+      "allowance": "---",
+      "total": "---",
+      "id": 4
     }
   ],
   "titles": [
@@ -94,6 +81,10 @@
     {
       "title": "ALSO",
       "id": 672
+    },
+    {
+      "title": "New title",
+      "id": 673
     }
   ],
   "admins": [
