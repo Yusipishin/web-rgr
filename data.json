@@ -21,52 +21,13 @@
       "rate": "78",
       "title": "The Dark Side of the Moon",
       "type": "Mini LP CD",
-      "format": "CD-DA",
+      "format": "DVD-Audio",
       "allowance": 117,
       "total": 351,
       "id": 2
     },
     {
-      "client": "А.Р. Иванов",
-      "issued": "2024-04-01",
-      "returned": "2024-04-16",
-      "days": "2",
-      "rate": "50",
-      "title": "NEW TITLE",
-      "type": "CD-RW",
-      "format": "Blu-ray Disc",
-      "allowance": 975,
-      "total": 1075,
-      "id": 3
-    },
-    {
-      "client": "FErfERG",
-      "issued": "2024-04-05",
-      "returned": "2024-04-09",
-      "days": "4",
-      "rate": "100",
-      "title": "Sgt. Pepper’s Lonely Hearts Club Band",
-      "type": "Mini LP CD",
-      "format": "SACD",
-      "allowance": 0,
-      "total": 400,
-      "id": 5
-    },
-    {
-      "client": "grege",
-      "issued": "2024-04-03",
-      "days": "4",
-      "rate": "36",
-      "title": "NEW NEW TITLE",
-      "type": "Mini LP CD",
-      "format": "CD-DA",
-      "returned": "---",
-      "allowance": "---",
-      "total": "---",
-      "id": 6
-    },
-    {
-      "client": "ЮСи аку АУ",
+      "client": "К.В. Лочин",
       "issued": "2024-04-10",
       "returned": "2024-04-15",
       "days": "3",
@@ -89,32 +50,8 @@
       "title": "The Dark Side of the Moon"
     },
     {
-      "title": "NEW TITLE",
-      "id": 667
-    },
-    {
-      "title": "FINISH TITLE",
-      "id": 669
-    },
-    {
-      "title": "YOOO",
-      "id": 670
-    },
-    {
-      "title": "NEW",
-      "id": 671
-    },
-    {
-      "title": "ALSO",
-      "id": 672
-    },
-    {
-      "title": "New title",
-      "id": 673
-    },
-    {
-      "title": "VERY NEW TITLE",
-      "id": 674
+      "title": "Abbey Road",
+      "id": 666
     }
   ],
   "admins": [

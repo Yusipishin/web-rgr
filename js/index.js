@@ -1,9 +1,5 @@
 "use strict"
 
-//         Работа с сервером:
-// npm i -g json-server -- установка
-// json-server -w data.json -- запуск
-
 let dataTable, filterDataTable,
     sections, forms, deleteId, updateId;
 
@@ -100,6 +96,7 @@ const afterCode = async () => {
             const idDel = el.getAttribute('data-id')
             deleteData('http://localhost:3000/titles', idDel)
                 .then(() => updateTitles())
+                .then(() => notify('Данные удалены!'))
         }
     })
 

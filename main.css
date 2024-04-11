@@ -175,7 +175,10 @@ tbody tr:hover {
 
 .all-orders {
   cursor: pointer;
-  color: chartreuse;
+  background: transparent;
+  font-size: 20px;
+  margin-left: 15px;
+  color: #59a90e;
 }
 
 .add__descr {
