@@ -106,8 +106,8 @@ body {
   margin-bottom: 30px;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #f1f1f144;
+tbody tr:hover {
+  background-color: rgba(211, 211, 211, 0.27);
 }
 
 .main__table, .rename__table {

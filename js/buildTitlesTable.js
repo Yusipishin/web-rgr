@@ -1,6 +1,6 @@
 const listTable = document.querySelector('.rename__table-body')
 
-const buildList = (titles) => {
+const buildTitlesTable = (titles) => {
     listTable.innerHTML = ''
     titles.map((item) => (
         listTable.insertAdjacentHTML('beforeend', `

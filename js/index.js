@@ -81,15 +81,6 @@ renameForm.addEventListener('submit', (e) => {
 
 getOrders().then(() => afterCode())
 
-const updateTitles = async () => {
-    await fetch("http://localhost:3000/titles")
-        .then((data) => data.json())
-        .then((data) => {
-            buildTitles(data)
-            buildList(data)
-        })
-}
-
 const afterCode = async () => {
     const ordPostBtn = document.querySelector('.order-post-btn')
     const mainDelBtn = document.querySelector('.main__ic-delete')
